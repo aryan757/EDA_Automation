@@ -1,5 +1,6 @@
 import os
-from constant import openai_key
+#from constant import openai_key
+from dotenv import load_dotenv
 import streamlit as st
 from langchain_openai import ChatOpenAI
 from langchain.llms import OpenAI
@@ -9,8 +10,9 @@ df = pd.read_csv("./updated_data.csv")
 from langchain.agents.agent_types import AgentType
 from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe_agent
 
+load_dotenv()
 
-os.environ["OPENAI_API_KEY"]=openai_key
+#os.environ["OPENAI_API_KEY"]=openai_key
 
 
 
