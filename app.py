@@ -15,7 +15,6 @@ load_dotenv()
 #os.environ["OPENAI_API_KEY"]=openai_key
 
 
-
 def process_query(query):
     # Here, you can implement your logic to process the query
     # For simplicity, I'm just returning the query as it is
